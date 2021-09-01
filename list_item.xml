@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:minHeight="@dimen/list_item_height">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@id/imageView"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+<TextView
+        android:id="@+id/jap_text_view"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        android:layout_height="44dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:text="ichi" />
+
+    <TextView
+        android:id="@+id/default_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/jap_text_view"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        tools:text="one" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/round_play_arrow_white_48" />
+</RelativeLayout>
+</RelativeLayout>
